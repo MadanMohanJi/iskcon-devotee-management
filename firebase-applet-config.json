@@ -1,10 +1,10 @@
 {
-  "projectId": "ai-studio-applet-webapp-5183d",
-  "appId": "1:79556266038:web:fc7f701f9ca9493c923097",
-  "apiKey": "AIzaSyB6mrrj6p9ojyf7-DjN9qUCWqPXLCZYoUU",
-  "authDomain": "ai-studio-applet-webapp-5183d.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-59da9217-aa3c-42d4-b27e-4cb8814438d3",
-  "storageBucket": "ai-studio-applet-webapp-5183d.firebasestorage.app",
-  "messagingSenderId": "79556266038",
-  "measurementId": ""
+  "projectId": "iskcon-devotee-managemen-e7667",
+  "appId": "1:853771645884:web:8d802702f1058e8a9a31b9",
+  "apiKey": "AIzaSyAyKwtwSEmL6kox3PmDzoq-Jh7pqxbQFXo",
+  "authDomain": "iskcon-devotee-managemen-e7667.firebaseapp.com",
+  "storageBucket": "iskcon-devotee-managemen-e7667.firebasestorage.app",
+  "messagingSenderId": "853771645884",
+  "measurementId": "G-XE2HS03YNX",
+  "databaseURL": "https://iskcon-devotee-managemen-e7667-default-rtdb.firebaseio.com"
 }
