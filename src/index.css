@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-primary: #FF9933;
+  --color-primary-dark: #E67E22;
+  --color-saffron: #FF9933;
+  --color-saffron-dark: #E67E22;
+  --color-gold: #AF8048;
+  --color-iskcon-gold: #AF8048;
+  --color-iskcon-dark: #5D4037;
+  --color-cream: #FFF9F2;
+  --color-slate-custom: #1E293B;
+  --color-stone-custom: #44403C;
+}
+
+/* Base layer configuration for Tailwind v4 */
+@utility body-base {
+  background-color: var(--color-cream);
+  color: var(--color-stone-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Components & Utility Styles */
+.iskcon-glass {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-slate-200);
+  box-shadow: var(--shadow-sm);
+  border-radius: 1.5rem; /* 24px */
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem; /* 16px */
+  transition: all 0.2s ease-in-out;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 15px -3px rgba(255, 153, 51, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-200);
+  background-color: #ffffff;
+  font-weight: 700;
+  color: var(--color-slate-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.875rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-slate-50);
+}
+
+.btn-secondary:active {
+  transform: scale(0.95);
+}
+
+.active-tab {
+  border-right: 4px solid var(--color-primary);
+  background-color: rgba(255, 153, 51, 0.05);
+  color: var(--color-primary);
+}
+
+/* Custom Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fafaf9;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(200, 200, 200, 0.8);
+  border-radius: 10px;
+  border: 2px solid #fafaf9;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 153, 51, 0.8);
+}
+
+.custom-scrollbar-light::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar-light::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar-light::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.custom-scrollbar-light:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.6);
+}
