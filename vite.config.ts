@@ -4,8 +4,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: './', // <-- This forces assets to resolve relative to where index.html is loaded!
+  base: './', // <-- This forces the browser to look for assets relative to index.html!
   build: {
-    // ... rest of your rollup manual chunks configuration
+    chunkSizeWarningLimit: 1000,
+    // ... your manual chunks configuration setup
   }
 });
